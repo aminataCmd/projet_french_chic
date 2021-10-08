@@ -29,11 +29,17 @@ public class VueJetable {
 
     public static void main(String[] args) {
         session = new Session();
+        
         String reponse = session.traiterConnexion();
         if (reponse == "ECRAN_ACCUEIL") {
             afficherEcranAccueil();
         }
-
+        /*
+        switch(session.traiterConnexion()){
+            case ECRAN_ACCUEIL:
+                afficherEcranAccueil();
+        }
+        */
     }
 
     private static void afficherEcranAccueil() {
